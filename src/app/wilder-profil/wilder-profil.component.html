@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>Wilder: {{ wilderName }}</h1>
+    <p>L'étudiant {{ wilderName }} est actuellement au combat, il est en plein atelier Angular.</p>
+    <button [routerLink]="['/']">Retour à la recherche</button>
+    <button [routerLink]="['research']">Modifier la recherche</button>
+    <router-outlet></router-outlet>
+</div>

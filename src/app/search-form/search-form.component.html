@@ -1,0 +1,8 @@
+
+<form #searchForm="ngForm" (ngSubmit)="searchForm.valid && onSubmit()">
+    <h1>Rechercher un Wilder !</h1>
+    <div class="fieldset">
+      <input id="search" name="seach" type="text" [(ngModel)]="fieldContent" required minlength="1" [placeholder]="defaultValue ? 'Recherche actuelle: '+defaultValue : 'Entrer le nom d\'un Wilder !'" >
+      <button type="submit" [disabled]="searchForm.invalid" >Rechercher</button>
+    </div>
+</form>

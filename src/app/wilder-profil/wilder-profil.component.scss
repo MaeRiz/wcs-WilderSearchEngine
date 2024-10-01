@@ -1,0 +1,27 @@
+button {
+  color: white;
+  font-size: 17px;
+  padding: 8px;
+  background-color: orange;
+  border: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  margin: 2px;
+  &:hover {
+    cursor: pointer;
+    scale: 1.03;
+  }
+  transition: all 350ms ease;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+
+  p {
+    font-size: 20px;
+    margin: 10px 0 25px;
+  }
+}

@@ -6,3 +6,14 @@
       <button type="submit" [disabled]="searchForm.invalid" >Rechercher</button>
     </div>
 </form>
+
+<div class="socialcontainer">
+  <h2>Suivez nous: </h2>
+  <div>
+    @for (btn of buttons; track $index) {
+      <app-button (messageFromChild)="messageReceivedFromChild($event)" [title]="btn.title" [color]="btn.color" [txtcolor]="btn.txt_color"></app-button>
+    }
+  </div>
+  <p>{{ messageChild }}</p>
+</div>
+

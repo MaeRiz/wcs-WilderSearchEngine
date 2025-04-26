@@ -1,0 +1,17 @@
+.button-social {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  font-weight: 700;
+  color: white;
+  margin: 0 5px;
+  min-width: 100px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.02;
+  }
+}

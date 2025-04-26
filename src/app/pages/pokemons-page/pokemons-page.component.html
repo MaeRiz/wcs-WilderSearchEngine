@@ -1,0 +1,4 @@
+@for(pokemon of pokemons; track $index){
+    <p>{{pokemon.name}}</p>
+    <img [src]="pokemon.images['small']" [alt]="pokemon.id">
+}
